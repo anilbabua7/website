@@ -1,6 +1,10 @@
 .slide-container {
-    width: 70%;
+    width: 69%;
     margin: auto; }
+
+.website-buttons{
+  padding-left: 5px;
+}
   
   h3 {
     text-align: center; }
@@ -10,7 +14,7 @@
     align-items: center;
     justify-content: center;
     background-size: cover;
-    height: 800px;
+    height: 300px;
   }
   
   .each-slide span {
