@@ -3,7 +3,7 @@ import React from 'react';
 import { Slide } from 'react-slideshow-image'
 import './slideshow.css'
 import WebsiteButtons from './../website-buttons'
-
+import Home from './../home'
 
 class SlideShow extends React.Component {
   images: string[] = [
@@ -26,14 +26,27 @@ class SlideShow extends React.Component {
   constructor(props: any){
     super(props);
     this.state = {
-      showSlideShow : false
-    }
-  }
+        renderComponent : ''
+    };
+    this.setComponent = this.setComponent.bind(this);
+    this.showComponent = this.showComponent.bind(this);
+}
+
+setComponent(){
+    console.log('You are here');
+    this.setState({
+        renderComponent : 'home'
+    });
+}
+
+showComponent = () =>{
+  return <Home />;
+}
 
   render() {
     return (
       <div className="slide-container">
-        <WebsiteButtons></WebsiteButtons>
+        <WebsiteButtons setComponent = {this.setComponent}></WebsiteButtons>
         <Slide {...this.properties}>
           <div className="each-slide">
             <div style={{ 'backgroundImage': `url(${require('./images/image1.jpg')})` }}>
@@ -56,6 +69,7 @@ class SlideShow extends React.Component {
             </div>
           </div>
         </Slide>
+        {this.showComponent}
       </div>
     );
   }
