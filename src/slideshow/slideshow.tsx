@@ -69,7 +69,7 @@ showComponent = () =>{
             </div>
           </div>
         </Slide>
-        {this.showComponent}
+        {this.showComponent()}
       </div>
     );
   }
