@@ -10,16 +10,16 @@ class WebsiteButtons extends  React.Component<any, any>{
                     <Button variant="contained" color="primary" onClick={() => this.props.setComponent('home')}>Home</Button>
                 </span>
                 <span className="website-buttons">
-                    <Button variant="contained" color="primary">Programs</Button>
+                    <Button variant="contained" color="primary" onClick={() => this.props.setComponent('programs')}>Programs</Button>
                 </span>
                 <span className="website-buttons">
-                    <Button variant="contained" color="primary">Read</Button>
+                    <Button variant="contained" color="primary" onClick={() => this.props.setComponent('read')}>Read</Button>
                 </span>
                 <span className="website-buttons">
-                    <Button variant="contained" color="primary" >Gallery</Button>
+                    <Button variant="contained" color="primary" onClick={() => this.props.setComponent('gallery')}>Gallery</Button>
                 </span>
                 <span className="website-buttons">
-                    <Button variant="contained" color="primary">History</Button>
+                    <Button variant="contained" color="primary" onClick={() => this.props.setComponent('history')}>History</Button>
                 </span>
             </div>
         );

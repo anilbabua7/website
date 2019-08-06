@@ -4,8 +4,13 @@ import { Slide } from 'react-slideshow-image'
 import './slideshow.css'
 import WebsiteButtons from './../website-buttons'
 import Home from './../home'
+import Programs from '../programs';
+import Read from '../read';
+import Gallery from '../gallery';
+import History from '../history';
 
-class SlideShow extends React.Component {
+
+class SlideShow extends React.Component<any,any> {
   images: string[] = [
     './images/image1.jpg',
     './images/image2.jpg',
@@ -32,15 +37,23 @@ class SlideShow extends React.Component {
     this.showComponent = this.showComponent.bind(this);
 }
 
-setComponent(){
+setComponent(component: string){
     console.log('You are here');
     this.setState({
-        renderComponent : 'home'
+        renderComponent : component
     });
 }
 
 showComponent = () =>{
-  return <Home />;
+    switch(this.state.renderComponent){
+        case 'home' : return <Home />;
+        case 'programs': return <Programs></Programs>;
+        case 'read': return <Read></Read>;
+        case 'gallery': return <Gallery></Gallery>;
+        case 'history': return <History></History>;
+        default: return <Home></Home> 
+    }
+  
 }
 
   render() {
