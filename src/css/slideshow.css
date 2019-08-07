@@ -1,4 +1,4 @@
-.slide-container {
+.home-page {
     width: 70%;
     margin: auto; }
   
@@ -10,12 +10,12 @@
     align-items: center;
     justify-content: center;
     background-size: cover;
-    height: 300px;
+    height: 90%;
   }
   
   .each-slide span {
     padding: 20px;
-    font-size: 20px;
+    font-size: 60px;
     background: #efefef;
     text-align: center;
   }
@@ -41,3 +41,22 @@
     margin: 0;
     background: #adceed;
   }
+
+  .paragraph-home{  
+    width: 70%;
+    margin: auto;
+    border-top-width: 2px;  
+    border-right-width: 2px;  
+    border-bottom-width: 2px;  
+    border-left-width: 2px;  
+    border-top-style: solid;  
+    border-right-style: solid;  
+    border-bottom-style: solid;  
+    border-left-style: solid;  
+    border-top-color: #0066FF;  
+    border-right-color: #0066FF;  
+    border-bottom-color: #0066FF;  
+    border-left-color: #0066FF;  
+    border: 2px solid #0066FF;  
+    background-color:#FFCC33;
+    }
