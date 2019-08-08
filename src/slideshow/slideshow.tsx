@@ -8,6 +8,7 @@ import Programs from '../programs';
 import Read from '../read';
 import Gallery from '../gallery';
 import History from '../history';
+import Contact from '../contact';
 
 
 class SlideShow extends React.Component<any,any> {
@@ -51,6 +52,7 @@ showComponent = () =>{
         case 'read': return <Read></Read>;
         case 'gallery': return <Gallery></Gallery>;
         case 'history': return <History></History>;
+        case 'contact': return <Contact></Contact>;
         default: return <Home></Home> 
     }
   

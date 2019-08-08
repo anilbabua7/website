@@ -21,6 +21,9 @@ class WebsiteButtons extends  React.Component<any, any>{
                 <span className="website-buttons">
                     <Button variant="contained" color="primary" onClick={() => this.props.setComponent('history')}>History</Button>
                 </span>
+                <span className="website-buttons">
+                    <Button variant="contained" color="primary" onClick={() => this.props.setComponent('contact')}>Contact Us</Button>
+                </span>
             </div>
         );
     }
